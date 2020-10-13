@@ -133,8 +133,17 @@ body {
   margin-right: 10px;
 
   vertical-align: middle;
+
+  fill: var(--primary-text-color);
 }
 
+.contacts .icon-mail:hover {
+  fill: var(--accent-color);
+}
+
+.contacts-link:hover .icon-mail {
+  fill: var(--accent-color);
+}
 .contacts .icon-tel {
   width: 10px;
   height: 16px;
@@ -394,6 +403,43 @@ body {
   text-align: center;
 }
 
+/* Clients */
+
+.clients-list {
+  display: flex;
+}
+
+.clients-list .item {
+  margin-right: 30px;
+}
+
+.clients-list .item:last-child {
+  margin-right: 0;
+}
+
+.clients-list .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list .link:hover {
+  border-color: var(--accent-color);
+}
+
+.clients-list .icon {
+  fill: #afb1b8;
+}
+
+.clients-list .icon:hover {
+  fill: var(--accent-color);
+}
+
 /* Footer */
 
 .footer {
@@ -448,11 +494,40 @@ body {
   color: var(--accent-color);
 }
 
+.social-list {
+  display: flex;
+}
+
+.social-list .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list .link:hover {
+  background-color: var(--accent-color);
+}
+
 .social .text {
+  display: block;
   text-transform: uppercase;
   margin-bottom: 20px;
 
   color: var(--primary-white-color);
+}
+
+.social-list .icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  fill: var(--primary-white-color);
 }
 
 /* Portfolio styles */
