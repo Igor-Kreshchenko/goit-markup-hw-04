@@ -48,7 +48,7 @@ body {
   padding: 0;
   overflow: hidden;
   border: 0;
-  clip: rect(0 0 0 0)
+  clip: rect(0 0 0 0);
 }
 
 .container {
@@ -148,9 +148,24 @@ body {
 /* Hero */
 
 .hero {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
   text-align: center;
 
   background-color: var(--dark-bg-color);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -231,6 +246,35 @@ body {
   margin-bottom: 0;
 }
 
+.feature-list .item::before {
+  display: block;
+  content: '';
+
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--light-bg-color);
+}
+
+.feature-list .icon-details::before {
+  background-image: url(../images/antenna-icon.svg);
+}
+
+.feature-list .icon-punctuality::before {
+  background-image: url(../images/clock-icon.svg);
+}
+
+.feature-list .icon-planning::before {
+  background-image: url(../images/diagram-icon.svg);
+}
+
+.feature-list .icon-technology::before {
+  background-image: url(../images/astronaut-icon.svg);
+}
+
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -290,6 +334,8 @@ body {
   padding-bottom: 30px;
   margin-right: 30px;
   margin-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 
