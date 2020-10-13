@@ -128,39 +128,30 @@ body {
 }
 
 .contacts .icon {
-  display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
-}
 
-.mail-icon {
-  width: 16px;
-  height: 12px;
-}
-
-.tel-icon {
-  width: 10px;
-  height: 16px;
-}
-
-.contacts-link:hover .icon-mail {
-  fill: var(--accent-color);
+  fill: var(--primary-text-color);
 }
 
 .contacts .item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contacts .link {
+.contacts-link {
   font-weight: 500;
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
+}
+
+.contacts-link:hover .icon {
+  fill: currentColor;
 }
 
 /* Main */
