@@ -273,33 +273,15 @@ body {
   margin-bottom: 0;
 }
 
-.feature-list .item::before {
+.feature-list .icon {
   display: block;
-  content: '';
-
+  width: 270px;
   height: 120px;
-  border-radius: 4px;
+  padding: 25px 100px;
   margin-bottom: 30px;
+  border-radius: 4px;
 
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--light-bg-color);
-}
-
-.feature-list .icon-details::before {
-  background-image: url(../images/antenna-icon.svg);
-}
-
-.feature-list .icon-punctuality::before {
-  background-image: url(../images/clock-icon.svg);
-}
-
-.feature-list .icon-planning::before {
-  background-image: url(../images/diagram-icon.svg);
-}
-
-.feature-list .icon-technology::before {
-  background-image: url(../images/astronaut-icon.svg);
 }
 
 .feature-list .title {
