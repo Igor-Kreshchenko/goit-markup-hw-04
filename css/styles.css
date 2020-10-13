@@ -127,13 +127,20 @@ body {
   margin-left: auto;
 }
 
-/* .contacts .item {
-  display: flex;
-  align-items: center;
-} */
-
-.contacts .icon {
+.contacts .icon-mail {
+  width: 16px;
+  height: 12px;
   margin-right: 10px;
+
+  vertical-align: middle;
+}
+
+.contacts .icon-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+
+  vertical-align: middle;
 }
 
 .contacts .item:not(:last-child) {
