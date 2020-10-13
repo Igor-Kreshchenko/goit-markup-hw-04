@@ -127,29 +127,24 @@ body {
   margin-left: auto;
 }
 
-.contacts .icon-mail {
-  width: 16px;
-  height: 12px;
+.contacts .icon {
+  display: inline-block;
   margin-right: 10px;
-
   vertical-align: middle;
-
-  fill: var(--primary-text-color);
 }
 
-.contacts .icon-mail:hover {
-  fill: var(--accent-color);
+.mail-icon {
+  width: 16px;
+  height: 12px;
+}
+
+.tel-icon {
+  width: 10px;
+  height: 16px;
 }
 
 .contacts-link:hover .icon-mail {
   fill: var(--accent-color);
-}
-.contacts .icon-tel {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-
-  vertical-align: middle;
 }
 
 .contacts .item:not(:last-child) {
