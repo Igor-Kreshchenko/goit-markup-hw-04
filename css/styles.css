@@ -163,12 +163,12 @@ body {
 /* Hero */
 
 .hero {
+  display: flex;
+  align-items: center;
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
 
   text-align: center;
 
