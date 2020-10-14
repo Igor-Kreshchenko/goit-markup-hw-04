@@ -506,8 +506,9 @@ body {
 
 .social .text {
   display: block;
-  text-transform: uppercase;
   margin-bottom: 20px;
+
+  text-transform: uppercase;
 
   color: var(--primary-white-color);
 }
