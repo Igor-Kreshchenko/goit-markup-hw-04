@@ -5,6 +5,7 @@
 /* Акцент #2196F3 */
 /* Тёмный фон #2F303A */
 /* Серый фон #F5F4FA */
+/* Цвет заливки иконок #AFB1B8 */
 
 :root {
   --primary-text-color: #757575;
@@ -13,6 +14,8 @@
 
   --primary-white-color: #ffffff;
   --secondary-white-color: rgba(255, 255, 255, 0.6);
+
+  --icon-fill-color: #afb1b8;
 
   --primary-bg-color: #ffffff;
   --dark-bg-color: #2f303a;
@@ -150,7 +153,8 @@ body {
   color: var(--accent-color);
 }
 
-.contacts-link:hover .icon {
+.contacts-link:hover .icon,
+.contacts-link:focus .icon {
   fill: currentColor;
 }
 
@@ -364,47 +368,90 @@ body {
 
 .team-list .position {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
+.team-list .social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-links .icon {
+  width: 20px;
+  height: 20px;
+
+  fill: var(--icon-fill-color);
+}
+
+.social-links .link:hover .icon,
+.social-links .link:focus .icon {
+  fill: var(--primary-white-color);
+}
+
 /* Clients */
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .clients-list .item {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-.clients-list .item:last-child {
+.clients-list .item:nth-child(6n) {
   margin-right: 0;
 }
 
-.clients-list .link {
+.clients-list .item:nth-last-child(-n + 6) {
+  margin-bottom: 0;
+}
+
+.clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
 
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-fill-color);
   border-radius: 4px;
 }
 
-.clients-list .link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
 }
 
-.clients-list .icon {
-  fill: #afb1b8;
+.clients-link .icon {
+  fill: var(--icon-fill-color);
 }
 
-.clients-list .icon:hover {
+.clients-link:hover .icon,
+.clients-link:focus .icon {
   fill: var(--accent-color);
 }
 
