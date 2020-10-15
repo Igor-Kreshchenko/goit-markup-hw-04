@@ -259,9 +259,11 @@ body {
   margin-bottom: 0;
 }
 
-.feature-list .icon {
-  display: block;
-  padding: 25px 100px;
+.feature-list .icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
 
@@ -573,6 +575,11 @@ body {
 }
 
 .gallery-list .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.gallery-list .item:focus-within {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
